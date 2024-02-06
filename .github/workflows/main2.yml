@@ -40,3 +40,5 @@ jobs:
           sudo cpulimit -l 50 -- sudo kvm -M usb=on -device usb-tablet -cpu host -smp 12 -m 8G -device virtio-balloon-pci -vga qxl -device e1000,netdev=n0 -netdev user,id=n0 -boot c -device virtio-serial-pci -device virtio-rng-pci -enable-kvm -drive file=/mnt/a.qcow2 -drive file=file.iso,media=cdrom -drive file=driver.iso,media=cdrom -drive file=a.img,format=raw -vnc :0 -uuid e47ddb84-fb4d-46f9-b531-14bb15156336
           while ps axg | grep -vw grep | grep -w qemu-system-x86_64 > /dev/null; do sleep 1; done
           while ps axg | grep -vw grep | grep -w kvm > /dev/null; do sleep 1; done
+          - name: Keep Alive
+          hours-timeout: 9
