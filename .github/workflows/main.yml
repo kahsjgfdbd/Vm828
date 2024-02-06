@@ -1,4 +1,4 @@
-name: Windows / Linux KVM support high spec (8gb ram / 256gb ssd / 4core / VT-x support)
+name: ERROR
 
 on: 
   workflow_dispatch:
