@@ -1,4 +1,4 @@
-name: test
+name: ERROR
 
 on: 
   workflow_dispatch:
