@@ -1,4 +1,4 @@
-name: old os (windows xp đến win 7 - 64bit, cài xong nhớ cài driver virtio-net vì e1000 ko hỗ trợ cho xp)
+name: TEST VM
 
 on: 
   workflow_dispatch:
